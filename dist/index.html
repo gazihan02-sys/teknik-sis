@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Teknik Servis İzleme Sistemi" />
+    <title>TR-SIS | Teknik Servis İzleme Sistemi</title>
+    <link rel="stylesheet" href="/output-f5de13c2042dfd6f.css"/>
+    
+    <!-- Gece modu: OS tercihine göre anında uygula (flash önleme) -->
+    <script>
+      (function(){
+        var stored = localStorage.getItem('tr_sis_dark_mode');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'true' || (stored === null && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+        function applyNavDark() {
+          var nav = document.getElementById('main-navbar');
+          if (!nav) return;
+          var dark = document.documentElement.classList.contains('dark');
+          nav.style.backgroundColor = dark ? '#2b2b2e' : '#e9eef6';
+          nav.style.borderColor = dark ? '#3c3c42' : '';
+          // Mobile dropdown menu is inside the header
+          var mobile = nav.querySelector('div.md\\:hidden');
+          if (mobile) {
+            mobile.style.backgroundColor = dark ? '#2b2b2e' : '#e9eef6';
+          }
+        }
+        var obs = new MutationObserver(function() { applyNavDark(); });
+        obs.observe(document.documentElement, {childList: true, subtree: true});
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+          if (localStorage.getItem('tr_sis_dark_mode') === null) {
+            document.documentElement.classList.toggle('dark', e.matches);
+            applyNavDark();
+          }
+        });
+      })();
+    </script>
+<link rel="modulepreload" href="/bundle.js" crossorigin="anonymous"><link rel="preload" href="/bundle.wasm" crossorigin="anonymous" as="fetch"></head>
+<body class="bg-background text-gray-900">
+
+<script type="module">
+import init from '/bundle.js';
+const wasm = await init({ module_or_path: '/bundle.wasm' });
+
+
+
+
+
+</script></body>
+</html>

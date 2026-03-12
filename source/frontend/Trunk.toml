@@ -1,0 +1,7 @@
+[build]
+# Disable SRI integrity hashes to avoid browser warning on preload destinations
+# See https://crbug.com/981419
+no_sri = true
+
+[[proxy]]
+backend = "http://127.0.0.1:3000/api"

@@ -1,0 +1,18 @@
+# Database files
+*.db
+*.sqlite
+teknik.db
+
+# Rust build output (çok büyük)
+source/target/
+
+# Secrets and machine-local config
+.env
+backend.env
+
+# Runtime/user data
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db

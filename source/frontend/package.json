@@ -1,0 +1,10 @@
+{
+  "name": "sis-teknik-frontend",
+  "scripts": {
+    "css:build": "npx tailwindcss -i ./style/input.css -o ./style/output.css --minify",
+    "css:watch": "npx tailwindcss -i ./style/input.css -o ./style/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4"
+  }
+}
