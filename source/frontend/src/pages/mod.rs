@@ -1,0 +1,10 @@
+pub mod login;
+pub mod home;
+pub mod users;
+pub mod products;
+pub mod musteri_kabul;
+pub mod montaj;
+pub mod irsaliye;
+pub mod settings;
+pub mod servis_kayitlari;
+pub mod sms_kuyruk;

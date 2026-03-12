@@ -1,0 +1,7 @@
+/target
+*.db
+*.sqlite
+.env
+node_modules/
+dist/
+pkg/

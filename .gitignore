@@ -1,0 +1,29 @@
+# Rust build artifacts
+source/target/
+/target/
+
+# Database files
+*.db
+*.sqlite
+teknik.db
+
+# Environment
+.env
+
+# Node
+node_modules/
+dist/
+pkg/
+
+# Compiled binary
+backend/bin/
+
+# Uploads (user data)
+uploads/
+
+# Logs
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
